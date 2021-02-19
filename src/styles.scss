@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Quicksand&display=swap");
+
+@font-face {
+    font-family: 'Alsandra';
+    src: url('./assets/fonts/alsandra.ttf') format('truetype');
+  }
+
+// body {
+//     font-family: 'Open Sans Condensed', sans-serif;
+//     overflow-x: hidden;
+// }
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+    background-color:royalblue;
+}
+
+.title{
+    font-family: 'Alsandra';
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 5em;
+    text-align: center;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+    color:#f47c46;
+  }
+  hr{
+    width: 64%;
+    text-align: center; 
+    margin: 10px auto 10px auto;
+    color: blue;
+  }

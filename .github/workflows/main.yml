@@ -58,4 +58,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: deployable_artifacts
+          FOLDER: company-house

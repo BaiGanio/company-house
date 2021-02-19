@@ -1,4 +1,9 @@
-  build-and-deploy:
+name: CI
+on:
+  push:
+    branches: [ master ]
+jobs:
+    build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout

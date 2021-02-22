@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import {from} from 'rxjs';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Company } from '../models/company.model';
@@ -14,7 +15,7 @@ export class BackendService {
     .set('Access-Control-Allow-Headers', 'Content-Type')
     .set('Access-Control-Allow-Methods', 'GET')
     .set('Access-Control-Allow-Origin', '*');
-
-    return this.http.get(environment.bgapiUrl + name);
+    
+    return this.http.get(environment.bgapiUrl + name,  {headers: headers});
   }
 }

@@ -8,6 +8,7 @@ import { FeaturesComponent } from './pages/features/features.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BackendService } from './services/backend.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ngxLoadingAnimationTypes, NgxLoadingModule } from 'ngx-loading';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxLoadingModule.forRoot({
+      animationType: ngxLoadingAnimationTypes.threeBounce,
+      primaryColour: '#88078e',
+      secondaryColour: '#c6ef23',
+      backdropBorderRadius: '14px',
+      fullScreenBackdrop: true
+    }),
   ],
   providers: [
     BackendService

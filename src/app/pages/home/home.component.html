@@ -10,8 +10,8 @@
         <input type="text" class="form-control" placeholder="Ex.: 9GAG" aria-label="Recipient's username" aria-describedby="button-addon2">
         <button class="btn " id="button-addon2" (click)="getCompany()"> <i class="fas fa-search"></i></button>
     </div> 
-    <div *ngIf="noSearchResult">
-        <h5>Sorry... No data found!</h5>
+    <div *ngIf="haveSearchResult">
+        <app-companies-search-result [companies]='companies'></app-companies-search-result>
     </div>
     <h5 *ngIf='loading'>Searching...</h5>  
 </div>

@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BackendService } from './services/backend.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ngxLoadingAnimationTypes, NgxLoadingModule } from 'ngx-loading';
+import { CompaniesSearchResultComponent } from './components/companies-search-result/companies-search-result.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ngxLoadingAnimationTypes, NgxLoadingModule } from 'ngx-loading';
     FooterComponent,
     NavbarComponent,
     FeaturesComponent,
-    HomeComponent
+    HomeComponent,
+    CompaniesSearchResultComponent
   ],
   imports: [
     BrowserModule,

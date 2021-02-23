@@ -10,7 +10,7 @@ import { BackendService } from 'src/app/services/backend.service';
 export class HomeComponent implements OnInit {
   companies = new Array<Company>();
   loading = false;
-  noSearchResult = false;
+  haveSearchResult = false;
 
   constructor(private backendService: BackendService) { }
 
@@ -31,11 +31,12 @@ export class HomeComponent implements OnInit {
           this.companies.push(c as Company);
         });
         this.loading = false;
+        this.haveSearchResult = true;
       }, 
       error => {
          console.log(error);
       }, 
-      () => { console.log(this.companies); }
+      () => {  }
     );
   }
 }

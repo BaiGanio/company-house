@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<ngx-loading [show]="loading"></ngx-loading>
 <div style="text-align: center;">
     <h1 class="title">
         Welcome to Company House
@@ -10,9 +10,8 @@
         <input type="text" class="form-control" placeholder="Ex.: 9GAG" aria-label="Recipient's username" aria-describedby="button-addon2">
         <button class="btn " id="button-addon2" (click)="getCompany()"> <i class="fas fa-search"></i></button>
     </div> 
+    <h5 *ngIf='loading'>Searching...</h5>  
     <div *ngIf="haveSearchResult">
         <app-companies-search-result [companies]='companies'></app-companies-search-result>
     </div>
-    <h5 *ngIf='loading'>Searching...</h5>  
 </div>
-<ngx-loading [show]="loading"></ngx-loading>

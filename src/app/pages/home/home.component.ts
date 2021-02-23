@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   companies = new Array<Company>();
   loading = false;
   haveSearchResult = false;
+  haveNoSearchResult = false;
 
   constructor(private backendService: BackendService) { }
 
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit {
 
   public getCompany(){
     this.loading = true;
-    this.backendService.getCompany('alma').subscribe(response => {
+    this.backendService.getCompany('alma').subscribe(response => { 
       response.forEach(element => {
           const c = {
             Id: element.id,
@@ -29,14 +30,23 @@ export class HomeComponent implements OnInit {
             CountryOfOrigin: element.countryOfOrigin
           };
           this.companies.push(c as Company);
-        });
+        });  
         this.loading = false;
-        this.haveSearchResult = true;
+        this.setSearchStatus();
       }, 
       error => {
-         console.log(error);
-      }, 
-      () => {  }
+        this.loading = false;
+        console.log(error);
+      },
+      () =>{ }
     );
+  }
+
+  private setSearchStatus(){
+    if(this.companies.length >= 1 ){
+      this.haveSearchResult = true;
+    } else{
+      this.haveNoSearchResult = true;
+    }
   }
 }

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Company } from 'src/app/models/company.model';
 
 @Component({
   selector: 'app-companies-search-result',
@@ -7,11 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CompaniesSearchResultComponent implements OnInit {
   @Input('companies')
-  companies: any;
+  companies = new Array<Company>();
   constructor() { }
 
-  ngOnInit() {
-    console.log(this.companies);
-  }
+  ngOnInit() { }
 
 }

@@ -9,11 +9,15 @@ import { BackendService } from 'src/app/services/backend.service';
 })
 export class HomeComponent implements OnInit {
   companies = new Array<Company>();
+  loading = false;
+  noSearchResult = false;
+
   constructor(private backendService: BackendService) { }
 
   ngOnInit() {}
 
   public getCompany(){
+    this.loading = true;
     this.backendService.getCompany('alma').subscribe(response => {
       response.forEach(element => {
           const c = {
@@ -26,12 +30,12 @@ export class HomeComponent implements OnInit {
           };
           this.companies.push(c as Company);
         });
+        this.loading = false;
       }, 
       error => {
          console.log(error);
       }, 
-      () => { 
-        console.log(this.companies); }
+      () => { console.log(this.companies); }
     );
   }
 }

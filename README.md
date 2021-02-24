@@ -43,7 +43,8 @@ _Basic data fetching example including:_
 ***
 - _Data fetching is performed via .NET Core API which feeds from data stored in a SQL database_
 - _API could be live tested at this address -> [https://test-bgapi.azurewebsites.net/swagger/index.html](https://test-bgapi.azurewebsites.net/swagger/index.html)_
-    
+  - result is list of companies which contains `name` from the search box in their own names
+  
   <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/api-swagger.gif">
     <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/api-swagger.gif" />
   </a>
@@ -59,7 +60,7 @@ _Basic data fetching example including:_
 - _Azure Function is triggered which automates several processes at once:_
   - read data from uploaded file
   - inserts custom data in a database
-  - log custom events via Application Insights orother vendors
+  - log custom events via Application Insights or other vendors
   - in the example :
     - are shown total rows ready to be inserted in the database
     - warning and exception message for ech record failed to be inserted into databse

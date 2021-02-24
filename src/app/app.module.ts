@@ -10,6 +10,7 @@ import { BackendService } from './services/backend.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ngxLoadingAnimationTypes, NgxLoadingModule } from 'ngx-loading';
 import { CompaniesSearchResultComponent } from './components/companies-search-result/companies-search-result.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CompaniesSearchResultComponent } from './components/companies-search-re
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     NgxLoadingModule.forRoot({
       animationType: ngxLoadingAnimationTypes.threeBounce,
       primaryColour: '#88078e',

@@ -6,11 +6,14 @@ _Basic data fetching example including:_
    - CI/CD pipe
    - GitHub Pages hosting
    - UEX thanx to Bootstrap v5
+   - website: [https://baiganio.github.io/company-house/](https://baiganio.github.io/company-house/)
  - .NET Core API (BE)
    - AzureDevOps project
    - CI/CD pipe
    - Azure Cloud websites hosting
    - v3.1 framework based
+   - website: [https://test-bgapi.azurewebsites.net/](https://test-bgapi.azurewebsites.net/)
+   - repo: [https://dev.azure.com/teamkepler/BGAPI](https://dev.azure.com/teamkepler/BGAPI)
  - MS SQL Server (data store)
    - Azure Cloud hosting
  - Azure Function (event triggered)

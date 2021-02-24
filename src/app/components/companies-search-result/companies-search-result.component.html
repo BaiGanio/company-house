@@ -1,15 +1,15 @@
-<div id="subscriptions-list" class="row" *ngFor='let c of companies;'>
-    <div class="card">
-      <div class="card-body">
+<div id="companies-list" class="row" *ngFor='let c of companies;'>
+  <div class="card">
+    <div class="card-body">   
+      <div class="text-start">
         <h5 class="text-center">{{c.CompanyName}} </h5>
         <hr>
-        <div class="text-start">
-            <p><b>ID</b> : {{c.Id}}</p>
-            <p><b>№</b> : {{c.CompanyNumber}}</p>
-            <p><b>Address</b> : {{c.AddressLine1}}</p>
-            <p><b>Country Of Origin</b> : {{c.CountryOfOrigin}}</p>
-            <p><b>Status</b> : {{c.CompanyStatus }}</p>
-        </div>
+        <p><b>ID</b> : {{c.Id}}</p>
+        <p><b>№</b> : {{c.CompanyNumber}}</p>
+        <p><b>Address</b> : {{c.AddressLine1}}</p>
+        <p><b>Country Of Origin</b> : {{c.CountryOfOrigin}}</p>
+        <p><b>Status</b> : {{c.CompanyStatus }}</p>
       </div>
     </div>
+  </div>
 </div>

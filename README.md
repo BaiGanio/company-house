@@ -27,18 +27,18 @@ _Basic data fetching example including:_
 ## _How it works:_
 
 - _FE Angular project allows you to search data for any company in the register. (which register?)_
-- _To resolve shared hosting delays - last 5 companies from the search result are taken for the demo_
+- _To resolve shared hosting delays - top 5 companies from the search result are taken for the demo_
 
-  - Found:
+  - With Found Data:
   
-  <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
-    <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
+  <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/serch-result-top-5.gif">
+    <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/serch-result-top-5.gif" />
   </a>
 
-  - Not Found:
+  - Without Found Data:
   
-  <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
-    <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
+  <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/no-serch-result.gif">
+    <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/no-serch-result.gif" />
   </a>
   
 ***

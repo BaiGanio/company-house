@@ -43,7 +43,7 @@ _Basic data fetching example including:_
 ***
 - _Data fetching is performed via .NET Core API which feeds from data stored in a SQL database_
 - _API could be live tested at this address -> [https://test-bgapi.azurewebsites.net/swagger/index.html](https://test-bgapi.azurewebsites.net/swagger/index.html)_
-  - result is list of companies which contains `name` from the search box in their own names
+  - result is list of companies which contains the query parameter in their own names
   
   <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/api-swagger.gif">
     <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/api-swagger.gif" />

@@ -94,13 +94,11 @@ _Basic data fetching example including:_
   - service creation
   - aligning dev and prod env 
  - Step 5
-   - Work on presentation walktrough in ReadMe.md 
- - Step 6
-   - FE form creation
-   - FE form error adjustments   
+   - work on presentation walktrough in ReadMe.md 
+   - final polishing
   
 ***
 ***
 ## _Total time for MVP solution:_
 
-- ~ 22 hours
+- ~ 16 - 18 hours

@@ -1,17 +1,19 @@
 # Company House
 Basic example including:
- - Angular (FE)
+   - GitHub project
+   - Angular (FE)
    - CI/CD pipe
    - GitHub Pages hosting
  - .NET Core API (BE)
+   - AzureDevOps project
    - CI/CD pipe
-   - Azure websites hosting
+   - Azure Cloud websites hosting
  - MS SQL Server (data store)
-   - Azure hosting
+   - Azure Cloud hosting
  - Azure Function (event triggered)
-   - Azure hosting
+   - Azure Cloud hosting
  - Azure Blob Storage Container (file storage)
-   - Azure hosting
+   - Azure Cloud hosting
 ***
 ***
 ## How it works
@@ -32,9 +34,8 @@ Basic example including:
   
 ***
 - _Data fetching is performed via .NET Core API which feeds from data stored in a SQL database_
-
-  - API could be live tested at this address -> [https://test-bgapi.azurewebsites.net/swagger/index.html](https://test-bgapi.azurewebsites.net/swagger/index.html)
-  
+- _API could be live tested at this address -> [https://test-bgapi.azurewebsites.net/swagger/index.html](https://test-bgapi.azurewebsites.net/swagger/index.html)_
+    
   <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/api-swagger.gif">
     <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/api-swagger.gif" />
   </a>
@@ -47,15 +48,16 @@ Basic example including:
 </a>
 
 ***
-- _Azure Function is triggered 
+- _Azure Function is triggered_
   - read data from uploaded file
   - inserts custom data in a database
   - log custom events via Application Insights
   
-<a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
-  <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
-</a>
+  <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
+    <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
+  </a>
 
+***
 ***
 ## Steps taken
 
@@ -81,8 +83,10 @@ Basic example including:
  - Step 5
    - FE form creation
    - FE form error adjustments
-   - initial explenations in ReadMe.md 
+   - Work on walktrough in ReadMe.md 
+   
+***
 ***
 ## Total time for complete solution
 
-- ~ 16 hours
+- ~ 22 hours

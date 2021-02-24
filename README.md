@@ -60,7 +60,10 @@ _Basic data fetching example including:_
   - read data from uploaded file
   - inserts custom data in a database
   - log custom events via Application Insights orother vendors
-  
+  - in the example :
+    - are shown total rows ready to be inserted in the database
+    - warning and exception message for ech record failed to be inserted into databse
+    
   <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
     <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
   </a>

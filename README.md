@@ -49,7 +49,7 @@ Basic example including:
    - FE form creation
    - FE form error adjustments
    - initial explenations in ReadMe.md 
-
+***
 ## Total time for complete solution
 
-- 16
+- ~ 16 hours

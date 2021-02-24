@@ -17,15 +17,19 @@ Basic example including:
 
 - _FE Angular project allows you to search data for any company in the register. (which register?)_
   - Found:
+  - 
   <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
-  <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
-</a>
+    <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
+  </a>
+
   - Not Found:
+  - 
   <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
-  <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
-</a>
-- _Data fetching from .NET Core API_
-- _Fetched data is stored in a SQL database_
+    <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
+  </a>
+
+- _Data fetching is performed via .NET Core API which feeds from data stored in a SQL database_
+  - (https://test-bgapi.azurewebsites.net/swagger/index.html)[https://test-bgapi.azurewebsites.net/swagger/index.html]
 - _File upload in Azure Blob Container_
 <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/file-upload-azure-blob-container.gif">
     <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/file-upload-azure-blob-container.gif" />

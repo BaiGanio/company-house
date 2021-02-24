@@ -17,30 +17,40 @@ Basic example including:
 
 - _FE Angular project allows you to search data for any company in the register. (which register?)_
   - Found:
-  - 
+  
   <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
     <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
   </a>
 
   - Not Found:
-  - 
+  
   <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
     <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
   </a>
 
 - _Data fetching is performed via .NET Core API which feeds from data stored in a SQL database_
-  - (https://test-bgapi.azurewebsites.net/swagger/index.html)[https://test-bgapi.azurewebsites.net/swagger/index.html]
+
+  - API could be live tested at this address -> [https://test-bgapi.azurewebsites.net/swagger/index.html](https://test-bgapi.azurewebsites.net/swagger/index.html)
+  
+  <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/api-swagger.gif">
+    <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/api-swagger.gif" />
+  </a>
+
 - _File upload in Azure Blob Container_
+
 <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/file-upload-azure-blob-container.gif">
     <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/file-upload-azure-blob-container.gif" />
 </a>
+
 - _Azure Function is triggered 
   - read data from uploaded file
   - inserts custom data in a database
   - log custom events via Application Insights
+  
 <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
   <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
 </a>
+
 ***
 ## Steps taken
 

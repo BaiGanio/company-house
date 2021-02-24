@@ -52,10 +52,10 @@ Basic data fetching example including:
 </a>
 
 ***
-- _Azure Function is triggered_
+- _Azure Function is triggered which automates several processes at once:_
   - read data from uploaded file
   - inserts custom data in a database
-  - log custom events via Application Insights
+  - log custom events via Application Insights orother vendors
   
   <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif">
     <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/catch-and-log-important-events-appinsight.gif" />
@@ -85,12 +85,13 @@ Basic data fetching example including:
   - service creation
   - aligning dev and prod env 
  - Step 5
+   - Work on presentation walktrough in ReadMe.md 
+ - Step 6
    - FE form creation
-   - FE form error adjustments
-   - Work on walktrough in ReadMe.md 
-   
+   - FE form error adjustments   
+  
 ***
 ***
-## Total time for complete solution
+## Total time for MVP solution
 
 - ~ 22 hours

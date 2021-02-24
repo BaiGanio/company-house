@@ -1,16 +1,19 @@
 # Company House
-Basic example including:
+Basic data fetching example including:
  - Angular (FE)
    - GitHub project
    - CI/CD pipe
    - GitHub Pages hosting
+   - UEX thanx to Bootstrap v5
  - .NET Core API (BE)
    - AzureDevOps project
    - CI/CD pipe
    - Azure Cloud websites hosting
+   - v3.1 framework based
  - MS SQL Server (data store)
    - Azure Cloud hosting
  - Azure Function (event triggered)
+   - C# baked
    - Azure Cloud hosting
  - Azure Blob Storage Container (file storage)
    - Azure Cloud hosting

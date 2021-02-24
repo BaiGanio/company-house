@@ -1,5 +1,6 @@
 # Company House
-Basic data fetching example including:
+
+_Basic data fetching example including:_
  - Angular (FE)
    - GitHub project
    - CI/CD pipe
@@ -20,7 +21,7 @@ Basic data fetching example including:
    
 ***
 ***
-## How it works
+## _How it works:_
 
 - _FE Angular project allows you to search data for any company in the register. (which register?)_
 
@@ -63,7 +64,7 @@ Basic data fetching example including:
 
 ***
 ***
-## Steps taken
+## _Steps taken:_
 
 - Step 1
   - creating project with basic implementation
@@ -92,6 +93,6 @@ Basic data fetching example including:
   
 ***
 ***
-## Total time for MVP solution
+## _Total time for MVP solution:_
 
 - ~ 22 hours

@@ -1,7 +1,7 @@
 # Company House
 Basic example including:
+ - Angular (FE)
    - GitHub project
-   - Angular (FE)
    - CI/CD pipe
    - GitHub Pages hosting
  - .NET Core API (BE)
@@ -14,6 +14,7 @@ Basic example including:
    - Azure Cloud hosting
  - Azure Blob Storage Container (file storage)
    - Azure Cloud hosting
+   
 ***
 ***
 ## How it works

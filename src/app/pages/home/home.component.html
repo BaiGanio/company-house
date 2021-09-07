@@ -1,20 +1,20 @@
 <ngx-loading [show]="loading"></ngx-loading>
 <div style="text-align: center;">
-    <h1 class="title">
-        Welcome to Company House
-    </h1>
-    <h5>The best data snapshot of live companies in the register</h5>
-    <hr>
-    <div class="row">
-        <div class="input-group mb-3">            
-            <input type="text" class="form-control" placeholder="Ex.: 9GAG" #cname aria-describedby="button-addon2">
-            <button class="btn " id="button-addon2" (click)="getCompany(cname.value)"> <i class="fas fa-search"></i></button>
-        </div> 
-        <h5 *ngIf='loading'>Searching... <br> Please have patiance. <br>  Shared hosting is used ;)</h5>  
-        <h5 *ngIf='warning'>Use the search box & try once more!</h5>  
-        <h5 *ngIf='haveNoSearchResult'>No data found on the server!</h5>  
-        <div *ngIf="haveSearchResult">
-            <app-companies-search-result [companies]='companies'></app-companies-search-result>
-        </div>
-    </div>
+  <h1 class="title">
+      Company House
+  </h1>
+  <h5>The best data snapshot of live companies in the register</h5>
+  <hr>
+  <div class="row">
+      <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Ex.: 9GAG" #cname aria-describedby="button-addon2">
+          <button class="btn " id="button-addon2" (click)="getCompany(cname.value)"> <i class="fas fa-search"></i></button>
+      </div>
+      <h5 *ngIf='loading'>Searching... <br> Please have patiance. <br>  Shared hosting is used ;)</h5>
+      <h5 *ngIf='warning'>Use the search box & try once more!</h5>
+      <h5 *ngIf='haveNoSearchResult'>No data found on the server!</h5>
+      <div *ngIf="haveSearchResult">
+          <app-companies-search-result [companies]='companies'></app-companies-search-result>
+      </div>
+  </div>
 </div>

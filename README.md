@@ -26,10 +26,10 @@ _Basic data fetching example including:_
    
 ***
 ***
-## _How it works:_
+## How it works:
 
-- _To resolve shared hosting delays - top 5 companies are fetched from the database and are taken for the demo_
-- _FE Angular project allows you to search data for any company in the register. (which register?)_
+- To resolve shared hosting delays - top 5 companies are fetched from the database and are taken for the demo
+- FE Angular project allows you to search data for any company in the register. (which register?)
 
   - With Found Data:
   
@@ -44,8 +44,8 @@ _Basic data fetching example including:_
   </a>
   
 ***
-- _Data fetching is performed via .NET Core API which feeds from data stored in a SQL database_
-- _API could be live tested at this address -> [https://test-bgapi.azurewebsites.net/swagger/index.html](https://test-bgapi.azurewebsites.net/swagger/index.html)_
+- Data is fetched from .NET Core API which feeds from SQL database
+- API could be live tested at this address -> [https://test-bgapi.azurewebsites.net/swagger/index.html](https://test-bgapi.azurewebsites.net/swagger/index.html)
   - result is list of companies which contains the query parameter in their own names
   
   <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/api-swagger.gif">
@@ -53,14 +53,14 @@ _Basic data fetching example including:_
   </a>
   
 ***
-- _File upload in Azure Blob Container_
+- File upload in Azure Blob Container
 
 <a href="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/file-upload-azure-blob-container.gif">
     <img src="https://raw.githubusercontent.com/BaiGanio/company-house/matser/readme-files/file-upload-azure-blob-container.gif" />
 </a>
 
 ***
-- _Azure Function is triggered which automates several processes at once:_
+- Azure Function is triggered which automates several processes at once:
   - read data from uploaded file
   - inserts custom data in a database
   - log custom events via Application Insights or other vendors
@@ -74,7 +74,7 @@ _Basic data fetching example including:_
 
 ***
 ***
-## _Steps taken:_
+## Steps taken:
 
 - Step 1
   - creating project with basic implementation
@@ -101,6 +101,6 @@ _Basic data fetching example including:_
   
 ***
 ***
-## _Total time for MVP solution:_
+## Total time for MVP solution:
 
 - ~ 16 - 18 hours

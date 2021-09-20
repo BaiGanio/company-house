@@ -2,7 +2,7 @@
 
 name: CI/CD (Build and Deploy)
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the matser branch
   push:
@@ -31,18 +31,19 @@ jobs:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
-          ${{ runner.os }}-node-    
+          ${{ runner.os }}-node-
+    # Install latest npm due issue with one of the packages
+    - name: Install latest npm
+      run: npm i -g npm@latest
     - name: Build
-      run: |
-        npm install
-        npm run-script deploy
+      run:  npm run-script deploy
     - name: archive build
       if: success()
       uses: actions/upload-artifact@v1
       with:
         name: deployable_artifacts
         path: dist
-        
+
   deploy:
     runs-on: ubuntu-latest
     needs: build

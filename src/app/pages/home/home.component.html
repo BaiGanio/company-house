@@ -10,7 +10,7 @@
           <input type="text" class="form-control" placeholder="Ex.: 9GAG" #cname aria-describedby="button-addon2">
           <button class="btn " id="button-addon2" (click)="getCompany(cname.value)"> <i class="fas fa-search"></i></button>
       </div>
-      <h5 *ngIf='loading'>Searching... <br> Please have patiance. <br>  Shared hosting is used ;)</h5>
+      <h5 *ngIf='loading'>Searching... ;)</h5>
       <h5 *ngIf='warning'>Use the search box & try once more!</h5>
       <h5 *ngIf='haveNoSearchResult'>No data found on the server!</h5>
       <div *ngIf="haveSearchResult">

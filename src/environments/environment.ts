@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   name: name,
   version: version,
-  bgapiUrl: 'https://localhost:44364/api/Statistics/Companies?name='
+  apiUrl: 'https://localhost:44389/'
 };
 
 /*

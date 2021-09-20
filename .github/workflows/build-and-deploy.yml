@@ -37,7 +37,7 @@ jobs:
       run: npm i -g npm@latest
     - name: Build
       run:  |
-        npm install -g @angular/cli --latest
+        npm install
         npm run-script deploy
     - name: archive build
       if: success()

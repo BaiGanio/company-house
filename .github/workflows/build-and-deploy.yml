@@ -36,7 +36,9 @@ jobs:
     - name: Install latest npm
       run: npm i -g npm@latest
     - name: Build
-      run:  npm run-script deploy
+      run:  |
+        npm install -g @angular/cli --latest
+        npm run-script deploy
     - name: archive build
       if: success()
       uses: actions/upload-artifact@v1

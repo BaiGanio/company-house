@@ -13,8 +13,8 @@
       <h5 *ngIf='loading'>Searching... ;)</h5>
       <h5 *ngIf='warning'>Use the search box & try once more!</h5>
       <h5 *ngIf='haveNoSearchResult'>No data found on the server!</h5>
-      <div *ngIf="haveSearchResult">
-          <app-companies-search-result [companies]='companies'></app-companies-search-result>
-      </div>
+  </div>
+  <div *ngIf="haveSearchResult">
+      <app-companies-search-result [companies]='companies'></app-companies-search-result>
   </div>
 </div>

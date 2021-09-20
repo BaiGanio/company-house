@@ -1,3 +1,11 @@
 hr{
     color: black;
 }
+.card{
+  width: 96%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.card:hover{
+  box-shadow: -1px 5px 15px 0px rgba(0,0,0,0.8);
+}

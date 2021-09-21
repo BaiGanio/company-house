@@ -13,6 +13,9 @@ import { CompaniesSearchResultComponent } from './components/companies-search-re
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing-module';
 import { CommonModule } from '@angular/common';
+import { HowItWorksComponent } from './pages/how-it-works/how-it-works.component';
+import { RandomCompaniesComponent } from './pages/random-companies/random-companies.component';
+import { UploadComponent } from './pages/upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { CommonModule } from '@angular/common';
     NavbarComponent,
     FeaturesComponent,
     HomeComponent,
-    CompaniesSearchResultComponent
+    CompaniesSearchResultComponent,
+    HowItWorksComponent,
+    RandomCompaniesComponent,
+    UploadComponent
   ],
   imports: [
     CommonModule,

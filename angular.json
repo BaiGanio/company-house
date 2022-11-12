@@ -127,5 +127,10 @@
         }
       }
     }},
-  "defaultProject": "company-house"
+  "defaultProject": "company-house",
+  "cli": {
+    "cache": {
+      "enabled": false
+    }
+  }
 }

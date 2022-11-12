@@ -43,11 +43,11 @@ export class AppComponent {
             CountryOfOrigin: element.countryOfOrigin
           };
           console.log(c);
-          // this.companies.push(c);
-          // this.companies.push(c);
-          // this.companies.push(c);
-          // this.companies.push(c);
-          // this.companies.push(c);
+          this.companies.push(c);
+          this.companies.push(c);
+          this.companies.push(c);
+          this.companies.push(c);
+          this.companies.push(c);
         }); 
         console.log(this.companies ); 
         this.haveSearchResult = true;

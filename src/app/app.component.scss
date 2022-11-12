@@ -1,0 +1,39 @@
+
+.title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 5em;
+    text-align: center;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+    color:white;
+  }
+
+.row {
+    width: 86%;
+    margin: 0 auto;
+}
+hr{
+    width: 64%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    color: white;
+  }
+
+  .card{
+    margin-bottom: 15px;
+    }
+    .card:hover{
+    box-shadow: -1px 5px 15px 0px rgba(0,0,0,0.8);
+    }
+    .mat-h1{
+      // font-family: 'Open Sans Condensed', sans-serif;
+    // margin-top: 5%;
+    // margin-bottom: 2%;
+    font-size: 16.6em !important;
+    // text-align: center;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+    // color:white;
+    }

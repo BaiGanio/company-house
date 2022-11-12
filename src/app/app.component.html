@@ -1,4 +1,24 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<!-- <ngx-loading [show]="loading"></ngx-loading> -->
+<!-- <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
 
+
+<div style="text-align: center;">
+  <h1>
+      Welcome to Company House
+  </h1>
+  <h5>The best DEMO data snapshot of live companies in the register</h5>
+  <hr>
+  <div class="row">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Ex.: 9GAG" #cname aria-describedby="button-addon2">
+      <button class="btn " id="button-addon2" (click)="getCompany(cname.value)"> <i class="fas fa-search"></i></button>
+  </div>
+      
+      <h5 *ngIf='loading'>Searching... ;)</h5>
+      <h5 *ngIf='warning'>Use the search box & try once more!</h5>
+      <h5 *ngIf='haveNoSearchResult'>No data found on the server!</h5>
+  </div>
+  <div *ngIf="haveSearchResult">
+      <app-search-result [companies]='companies'></app-search-result>
+  </div>
+</div>

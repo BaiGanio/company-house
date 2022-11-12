@@ -1,52 +1,30 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FeaturesComponent } from './pages/features/features.component';
-import { HomeComponent } from './pages/home/home.component';
-import { BackendService } from './services/backend.service';
+import { BackendService } from './main/backend.service';
+
 import { HttpClientModule } from '@angular/common/http';
-import { ngxLoadingAnimationTypes, NgxLoadingModule } from 'ngx-loading';
-import { CompaniesSearchResultComponent } from './components/companies-search-result/companies-search-result.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing-module';
-import { CommonModule } from '@angular/common';
-import { HowItWorksComponent } from './pages/how-it-works/how-it-works.component';
-import { RandomCompaniesComponent } from './pages/random-companies/random-companies.component';
-import { UploadComponent } from './pages/upload/upload.component';
+import { SearchResultComponent } from './main/search-result.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './main/angular-material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
-    NavbarComponent,
-    FeaturesComponent,
-    HomeComponent,
-    CompaniesSearchResultComponent,
-    HowItWorksComponent,
-    RandomCompaniesComponent,
-    UploadComponent
+    SearchResultComponent
   ],
   imports: [
-    CommonModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule,
-    NgxLoadingModule.forRoot({
-      animationType: ngxLoadingAnimationTypes.threeBounce,
-      primaryColour: '#88078e',
-      secondaryColour: '#c6ef23',
-      backdropBorderRadius: '14px',
-      fullScreenBackdrop: true
-    }),
+    AngularMaterialModule
   ],
-  providers: [
-    BackendService
-  ],
+  providers: [BackendService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

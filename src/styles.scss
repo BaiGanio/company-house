@@ -2,29 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans+Condensed:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Quicksand&display=swap");
 
-@font-face {
-  font-family: 'Alsandra';
-  src: url('./assets/fonts/alsandra.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'Alsandra';
+//   src: url('./assets/fonts/alsandra.ttf') format('truetype');
+// }
 
 // body {
 //     font-family: 'Open Sans Condensed', sans-serif;
 //     overflow-x: hidden;
 // }
 body {
-  font-family: 'Quicksand', sans-serif;
+ font-family: 'Quicksand', sans-serif;
+ // font-family: 'Open Sans Condensed', sans-serif;
   overflow-x: hidden;
   background-color:royalblue;
 }
 
 .title{
-  // font-family: 'Alsandra';
+  font-family: 'Open Sans Condensed', sans-serif;
   margin-top: 5%;
   margin-bottom: 2%;
   font-size: 5em;
   text-align: center;
-  // -webkit-text-stroke-width: 0.8px;
-  // -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
   color:white;
 }
 
@@ -69,3 +70,40 @@ hr{
   z-index: 2000;
 }
 /* Loading animation END */
+
+.input-group{
+  width: 30%;
+  margin: 0 auto;
+}
+.mb-3{
+  margin-top: 3%;
+}
+.btn:hover{
+  background-color: yellowgreen;
+}
+h3, h5{
+  color: whitesmoke;
+}
+
+
+hr{
+  color: black;
+}
+.card{
+width: 96%;
+margin: 0 auto;
+margin-bottom: 15px;
+}
+.card:hover{
+box-shadow: -1px 5px 15px 0px rgba(0,0,0,0.8);
+}
+.mat-h1{
+  // font-family: 'Open Sans Condensed', sans-serif;
+// margin-top: 5%;
+// margin-bottom: 2%;
+font-size: 16.6em !important;
+// text-align: center;
+-webkit-text-stroke-width: 0.8px;
+-webkit-text-stroke-color: black;
+// color:white;
+}

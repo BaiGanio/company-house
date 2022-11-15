@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:30154/api/'
+  apiUrl: 'http://localhost:30154/api/companies'
   //apiUrl: 'https://test-bgapi.azurewebsites.net/api/'
 };
 

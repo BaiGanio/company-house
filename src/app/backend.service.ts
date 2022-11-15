@@ -17,7 +17,10 @@ export class BackendService {
   getCompany(name: string): Observable<any> {
     return this.http.get(environment.apiUrl + 'Companies?name=' + name,  {headers: this.headers});
   }
-  getCompanies(): Observable<Array<any>> {
-    return this.http.get<Array<any>>(environment.apiUrl + 'Companies',  {headers: this.headers});
+  getAllCompanies(): Observable<Array<any>> {
+    return this.http.get<Array<any>>(environment.apiUrl,  {headers: this.headers});
+  }
+  getCompanies(name: string): Observable<any> {
+    return this.http.get(environment.apiUrl + `/GetBy?name=${name}`,  {headers: this.headers});
   }
 }

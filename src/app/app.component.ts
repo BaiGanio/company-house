@@ -31,22 +31,23 @@ export class AppComponent {
     this.warning = false;
     this.companies = new Array<any>();    
 
-    this.backendService.getCompany(name).subscribe({
+    this.backendService.getCompanies(name).subscribe({
       next: data => {
-        data.forEach((element: { id: any; name: any; companyNumber: any; addressLine1: any; companyStatus: any; countryOfOrigin: any; }) => {
+        data.forEach((element) => {
+          console.log(element);
           const c = {
             Id: element.id,
-            Name: element.name,
+            CompanyName: element.companyName,
             CompanyNumber: element.companyNumber,
-            AddressLine1: element.addressLine1,
+            Address: element.address,
+            PostTown: element.postTown,
+            PostCode: element.postCode,
             CompanyStatus: element.companyStatus,
-            CountryOfOrigin: element.countryOfOrigin
+            CountryOfOrigin: element.countryOfOrigin,
+            Uri: element.uri,
+            SicCode: element.sicCode_SicText_1
           };
           console.log(c);
-          this.companies.push(c);
-          this.companies.push(c);
-          this.companies.push(c);
-          this.companies.push(c);
           this.companies.push(c);
         }); 
         console.log(this.companies ); 

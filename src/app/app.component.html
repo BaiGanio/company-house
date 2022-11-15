@@ -5,28 +5,34 @@
   </h1>
   <h3>The best data snapshot for companies in the registry ;/</h3>
   <hr>
-  <div class="">
-    <div class="input-group mb-4">
-      <input type="text" class="form-control" placeholder="Ex.: Milky Way" #cname aria-describedby="button-addon2">
-      <button type="button" class="btn btn-warning" id="button-addon2" (click)="getCompany(cname.value)">Search <i class="fas fa-search"></i></button>
-    </div>
-      <h5 *ngIf='loading'>Searching... ;)</h5>
-      <h5 *ngIf='warning'>Use the search box & try once more. ;/</h5>
-      <h5 *ngIf='haveNoSearchResult'>No data found! ;(</h5>
+ <div>
+  <div class="input-group mb-4">
+    <input type="text" class="form-control" placeholder="Ex.: Milky Way" #cname aria-describedby="button-addon2">
+    <button type="button" class="btn btn-warning" id="button-addon2" (click)="getCompany(cname.value)">Search <i class="fas fa-search"></i></button>
   </div>
+  <h5 *ngIf='loading'>Searching... ;)</h5>
+  <h5 *ngIf='warning'>Use the search box & try once more. ;/</h5>
+  <h5 *ngIf='haveNoSearchResult'>No data found! ;(</h5>
+ </div>
   <div *ngIf="haveSearchResult">
     <div class="row">
-      <div class="col-md-3" *ngFor='let c of companies;'>
+      <div class="col-md-4" *ngFor='let c of companies;'>
         <div class="card">
           <div class="card-body">
             <div class="text-start">
-              <h5 class="text-center">{{c.Name}} </h5>
+              <h5 class="text-center">{{c.CompanyName}} </h5>
               <hr>
-              <p><b>ID</b> : {{c.Id}}</p>
-              <p><b>№</b> : {{c.CompanyNumber}}</p>
-              <p><b>Address</b> : {{c.AddressLine1}}</p>
-              <p><b>Country Of Origin</b> : {{c.CountryOfOrigin}}</p>
-              <p><b>Status</b> : {{c.CompanyStatus }}</p>
+              <!-- <p><b>ID</b> : {{c.Id}}</p> -->
+              <p><b>№</b>: {{c.CompanyNumber}}</p>
+              <p><b>Address</b>: {{c.Address}}</p>
+              <p><b>Town</b>: {{c.PostTown }}</p>
+              <p><b>Post Code</b>: {{c.PostCode }}</p>
+              <p><b>Country Of Origin</b>: {{c.CountryOfOrigin}}</p>
+              <p><b>Status</b>: {{c.CompanyStatus }}</p>
+              <p><b>Area</b>: {{c.SicCode }}</p>
+              <p><b>URI</b>: <a href="{{c.Uri}}" target="_blank">{{c.Uri}}</a></p>
+
+              <span class="badge bg-info text-dark">Verified</span>
             </div>
           </div>
           </div>

@@ -68,19 +68,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "company-house:build",
-            "port": 44376
+            "port": 44376,
+            "buildTarget": "company-house:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "company-house:build:production"
+              "buildTarget": "company-house:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "company-house:build"
+            "buildTarget": "company-house:build"
           }
         },
         "test": {

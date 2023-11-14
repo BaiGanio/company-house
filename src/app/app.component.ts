@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { BackendService } from './backend.service';
 
+const { version: appVersion } = require('../../package.json')
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,8 +17,11 @@ export class AppComponent {
   haveNoSearchResult = false;
   warning = false;
   search : string = '';
+  version = '';
 
-  constructor(private backendService: BackendService) { }
+  constructor(private backendService: BackendService) { 
+    this.version = appVersion;
+  }
 
   ngOnInit() { }
 

@@ -23,7 +23,19 @@ export class AppComponent {
     this.version = appVersion;
   }
 
-  ngOnInit() { }
+  ngOnInit() { 
+    this.backendService.getweather().subscribe({
+      next: data => {
+        console.log(data);
+      },
+      error: error => {
+        console.log(error);
+      },
+      complete: () => {
+        console.log('Request complete');
+      }
+    });
+  }
 
   public getCompany(name: string){
     if(!name){

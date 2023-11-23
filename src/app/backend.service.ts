@@ -23,4 +23,9 @@ export class BackendService {
   getCompanies(name: string): Observable<any> {
     return this.http.get(environment.apiUrl + `/GetBy?name=${name}`,  {headers: this.headers});
   }
+
+  getweather(): Observable<any> {
+    return this.http.get("https://localhost:7140/weatherforecast",  {headers: this.headers});
+  }
+
 }

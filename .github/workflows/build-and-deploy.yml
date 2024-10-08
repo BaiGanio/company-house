@@ -53,7 +53,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Download build artifacts
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v3
         with:
           name: deployable_artifacts
       - name: Deploy to GitHub Pages

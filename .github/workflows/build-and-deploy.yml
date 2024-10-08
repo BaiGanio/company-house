@@ -65,7 +65,25 @@ jobs:
         subject-path: dist
 
   # JOB 2
+  attest:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      id-token: write
+      contents: read
+      attestations: write
 
+    steps:
+      - name: Checkout master branch
+        uses: actions/checkout@v3
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: deployable_artifacts
+      - name: Generate artifact attestation
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: deployable_artifacts
 
   # JOB 3
   deploy:
@@ -78,6 +96,17 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: deployable_artifacts
+
+      - name: List downloaded artifacts
+        run: ls -la deployable_artifacts
+
+      - name: Print working directory
+        run: pwd
+
+      - name: List all files
+        run: ls -la
+
+      
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:

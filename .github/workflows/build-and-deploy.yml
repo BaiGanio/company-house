@@ -75,6 +75,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build_artifacts
+          path: dist
 
       - name: List downloaded artifacts
         run: ls -la

@@ -21,10 +21,10 @@ jobs:
     steps:
     - name: Checkout master branch
       uses: actions/checkout@v2
-    - name: Install Node.js 14.x & NPM
+    - name: Install Node.js 18.x & NPM
       uses: actions/setup-node@v1 #this installs node and npm for us
       with:
-        node-version: '14.x'
+        node-version: '18.x'
     - name: Cache node_modules
       uses: actions/cache@v1
       with:

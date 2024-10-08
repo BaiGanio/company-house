@@ -41,7 +41,7 @@ jobs:
         npm run-script deploy
     - name: archive build
       if: success()
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v3
       with:
         name: deployable_artifacts
         path: dist

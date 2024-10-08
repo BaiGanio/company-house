@@ -74,7 +74,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build_artifacts
-          path: dist
+          path: deployable_artifacts
 
       - name: List downloaded artifacts
         run: ls -la
@@ -83,7 +83,7 @@ jobs:
         run: pwd
 
       - name: List all files
-        run: ls -la dist
+        run: ls -la deployable_artifacts
 
       
       - name: Deploy to GitHub Pages
@@ -91,4 +91,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: dist
+          FOLDER: deployable_artifacts

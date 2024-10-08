@@ -20,10 +20,10 @@ jobs:
   # JOB 1
   build:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
+    #permissions:
+      #id-token: write
       # contents: read
-      attestations: write
+      #attestations: write
       
     steps:
     
@@ -50,7 +50,7 @@ jobs:
     - name: Build
       run:  |
         npm install
-        npm run-script deploy
+        npm run build
         
     - name: archive build
       if: success()
@@ -98,7 +98,7 @@ jobs:
           name: deployable_artifacts
 
       - name: List downloaded artifacts
-        run: ls -la deployable_artifacts
+        run: ls
 
       - name: Print working directory
         run: pwd

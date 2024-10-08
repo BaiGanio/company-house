@@ -52,7 +52,7 @@ jobs:
         npm install
         npm run build
         
-    - name: archive build
+    - name: Upload build artifacts
       if: success()
       uses: actions/upload-artifact@v3
       with:

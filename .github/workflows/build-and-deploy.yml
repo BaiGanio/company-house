@@ -44,7 +44,7 @@ jobs:
           ${{ runner.os }}-node-
           
     # Install latest npm due issue with one of the packages
-    - name: Install latest npm
+    - name: Install latest NPM
       run: npm i -g npm@latest
       
     - name: Build
@@ -56,7 +56,7 @@ jobs:
       if: success()
       uses: actions/upload-artifact@v3
       with:
-        name: deployable_artifacts
+        name: build_artifacts
         path: dist
 
     - name: Generate artifact attestation
@@ -74,7 +74,7 @@ jobs:
       - name: Download build artifacts
         uses: actions/download-artifact@v3
         with:
-          name: deployable_artifacts
+          name: build_artifacts
 
       - name: List downloaded artifacts
         run: ls -la
@@ -91,4 +91,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: deployable_artifacts
+          FOLDER: dist

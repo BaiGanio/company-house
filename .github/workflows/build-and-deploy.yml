@@ -49,7 +49,7 @@ jobs:
     - name: Build
       run:  |
         npm install
-        npm run build
+        npm run-script deploy
         
     - name: Upload build artifacts
       if: success()

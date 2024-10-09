@@ -30,10 +30,10 @@ jobs:
     - name: Checkout master branch
       uses: actions/checkout@v3
       
-    - name: Install Node.js 20.x & NPM
+    - name: Install Node.js 22.x & NPM
       uses: actions/setup-node@v3 #this installs node and npm for us
       with:
-        node-version: '20.x'
+        node-version: '22.x'
         
     - name: Cache node_modules
       uses: actions/cache@v3
